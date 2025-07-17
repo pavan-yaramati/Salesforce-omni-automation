@@ -1,5 +1,12 @@
 <aura:component implements="flexipage:availableForAllPageTypes" access="global">
     <aura:attribute name="hasAccepted" type="Boolean" default="false" />
+    <aura:attribute name="acceptedWorkId" type="String" default="" />
+    
     <lightning:omniToolkitAPI aura:id="omniToolkit"/>
+
+    <!-- Event triggered when Omni assigns cases -->
     <aura:handler event="lightning:omniChannelWorkAssigned" action="{!c.onWorkAssigned}"/>
+
+    <!-- Event triggered when presence status changes (e.g., Ready -> Busy) -->
+    <aura:handler event="lightning:omniChannelStatusChanged" action="{!c.onStatusChanged}"/>
 </aura:component>
