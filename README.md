@@ -64,7 +64,10 @@ This project demonstrates a fully custom case routing logic in Salesforce Omni-C
 
 ## 🧩 Component Files
 
-
+force-app/main/default/aura/OmniRoutingHandler/
+├── OmniRoutingHandler.cmp
+├── OmniRoutingHandlerController.js
+└── OmniRoutingHandlerHelper.js
 ---
 
 ## 📘 Use Cases
